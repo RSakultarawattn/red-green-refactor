@@ -3,11 +3,11 @@
 const spot = { name: 'spot', age: 5, weight: '20 lbs' }
 
 
-function getName(obj) {
+const getName = (obj) => {
+    const { name } = obj
+    return name
+};
 
-    const { name } = spot
-    return name;
-}
 
 
 
