@@ -1,9 +1,9 @@
-const { copyAndPush } = require('./copyAndPush.js');
+const { numbers, copyAndPush } = require('./copyAndPush.js');
 
-describe('util functions', () => {
-    it('returns a new array with all the items in the original array and new item pushed', () => {
+describe('copyAndPush', () => {
+    it('returns a new array and adds 4 to the end', () => {
+        let response = copyAndPush(numbers, 4);
 
-
-
+        expect(response).toEqual([1, 2, 3, 4])
     });
-});
+})
